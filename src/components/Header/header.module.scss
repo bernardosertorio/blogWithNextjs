@@ -1,1 +1,36 @@
-// TODO
+.headerContainer {
+  position: relative;
+  width: 1440px;
+  height: 1068px;
+}
+
+.headerContent {
+  width: 238.62px;
+  height: 25.63px;
+  left: 370px;
+  top: 40px;
+
+  .vector {
+    position: absolute;
+    left: 25.83%;
+    right: 71.39%;
+    top: 7.45%;
+    bottom: 90.4%;
+  }
+
+  .logo {
+    position: absolute;
+    width: 172.09px;
+    height: 23.63px;
+    left: 428.87px;
+    top: 81.55px;
+  }
+
+  .svg {
+    position: absolute;
+    width: 4.09px;
+    height: 4.07px;
+    left: 606.53px;
+    top: 96.15px;
+  }
+}

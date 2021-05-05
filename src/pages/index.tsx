@@ -36,7 +36,7 @@ export default function Home() {
   );
 }
 
-export const getStaticProps = async () => {
-  const prismic = getPrismicClient();
-  const postsResponse = await prismic.query();
-};
+// export const getStaticProps = async () => {
+// const prismic = getPrismicClient();
+// const postsResponse = await prismic.query();
+// };
