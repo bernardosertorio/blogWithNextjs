@@ -1,7 +1,10 @@
 import Head from 'next/head';
 
+import { FiCalendar, FiUser } from 'react-icons/fi';
+
 import { GetStaticProps } from 'next';
 
+import Link from 'next/link';
 import { getPrismicClient } from '../services/prismic';
 
 import commonStyles from '../styles/common.module.scss';
@@ -32,6 +35,20 @@ export default function Home() {
       <Head>
         <title>Home | Blog With Nextjs</title>
       </Head>
+      <main className={styles.homeMain}>
+        <section className={styles.homeSection}>
+          <Link href="/">
+            <a>
+              <h1>Como utilizar Hooks</h1>
+            </a>
+          </Link>
+          <h2>Pensando em sincronização em vez de ciclos de vida.</h2>
+          <div>
+            <FiCalendar /> <time>19 Abr 2021</time>
+            <FiUser /> <text>Bernardo Sertório</text>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
