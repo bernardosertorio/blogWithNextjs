@@ -43,9 +43,15 @@ export default function Home() {
             </a>
           </Link>
           <h2>Pensando em sincronização em vez de ciclos de vida.</h2>
-          <div>
-            <FiCalendar /> <time>19 Abr 2021</time>
-            <FiUser /> <text>Bernardo Sertório</text>
+          <div className={styles.homeCalendarUser}>
+            <div className={styles.homeCalendar}>
+              <FiCalendar />
+              <time>19 Abr 2021</time>
+            </div>
+            <div className={styles.homeUser}>
+              <FiUser />
+              <text>Bernardo Sertório</text>
+            </div>
           </div>
         </section>
       </main>
